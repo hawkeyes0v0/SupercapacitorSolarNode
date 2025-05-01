@@ -2,16 +2,14 @@
 5V 1150F (2x 2.5V 2300F) = ~700mAh @ 3.3v boost
 
 ![Tree mounted node](pics/treemount.jpg)
-
 ![Assembled](pics/assembled.jpg)
-
 ![Exploded](pics/exploded1.jpg)
 
 
 ## Hardware
 
 Any supercapacitors will work as long as the rated voltage totals over 4.2v. Preferably 5v or higher since the closer you charge a supercapacitor to it's rated voltage, the faster it will self-discharge (meaning it wastes power for no reason).
-[Where I got the 2.5V 2300F supercapacitors]([https://vi.aliexpress.com/item/1005003932299815.html](https://vi.aliexpress.com/item/1005008157585442.html))
+[2.5V 2300F supercapacitors](https://vi.aliexpress.com/item/1005008157585442.html)
 
 ![Supercaps](pics/Supercaps.jpg)
 
