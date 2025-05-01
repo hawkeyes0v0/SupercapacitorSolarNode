@@ -2,8 +2,11 @@
 5V 1150F (2x 2.5V 2300F) = ~700mAh @ 3.3v boost
 
 ![Tree mounted node](pics/treemount.jpg)
-![Tree mounted node](pics/assembled.jpg)
-![Tree mounted node](pics/exploded1.jpg)
+
+![Assembled](pics/assembled.jpg)
+
+![Exploded](pics/exploded1.jpg)
+
 
 ## Hardware
 
