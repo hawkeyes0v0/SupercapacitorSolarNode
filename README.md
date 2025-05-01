@@ -21,8 +21,8 @@ Here is a quick write-up on my attempt at a solar powered supercapacitor node. C
 
 - 7dbi antenna
 
-![Assembled](pics/assembled.jpg)
-![Exploded](pics/exploded1.jpg)
+<a href="url"><img src="https://github.com/hawkeyes0v0/SupercapacitorSolarNode/blob/main/pics/assembled.jpg" align="center" width="480" ></a>
+<a href="url"><img src="https://github.com/hawkeyes0v0/SupercapacitorSolarNode/blob/main/pics/exploded1.jpg" align="center" width="480" ></a>
 
 
 ## Hardware
@@ -49,7 +49,6 @@ The board I used is a Heltec T114 (no display version) with the stock GPS module
 The solar Panel and CN3791 MPPT charger provide enough power to charge even on cloudy days. Very rarely, on extremely cloudy/dark days it won't be enough, but the supercaps have about 2 days worth of reserve power to keep it going.
 The solar panel is a 10W Renogy I got from Amazon. The MPPT charger is the 12v version with a 2A max output.
 - [10W Renogy Solar Panel](https://www.amazon.ca/dp/B084MGS7KC)
-
 - [12v MPPT to 4.2v lithium charger](https://vi.aliexpress.com/item/1005001572351643.html)
 
 
@@ -97,9 +96,7 @@ At 3.3V output, 800mAh can be expected while ignoring self discharge and boost-b
 
 The STL files are included below, but you may have to modify them to support your own components or enclosure.
 - [bottom 5V1150F Solar Node](https://www.tinkercad.com/things/4mrYyDIKIQc-bottom-5v1150f-solar-node)
-
 - [top 5V1150F Solar Node](https://www.tinkercad.com/things/6spdvdrJQ3b-top-5v1150f-solar-node)
-
 - [flat Core 5V1150F Solar Node](https://www.tinkercad.com/things/jdPOMBwyFCB-flat-core-5v1150f-solar-node)
 
 
@@ -109,13 +106,12 @@ After a few months of testing, the node has only run out of power twice during e
 
 MPPT charger can be seen converting the much higher voltage down to the supercap voltage and increasing the current significantly.
 
-![testing1](pics/testing1.png)
-
-![testing2](pics/testing2.png)
+<a href="url"><img src="https://github.com/hawkeyes0v0/SupercapacitorSolarNode/blob/main/pics/testing1.png" align="center" width="480" ></a>
+<a href="url"><img src="https://github.com/hawkeyes0v0/SupercapacitorSolarNode/blob/main/pics/testing2.png" align="center" width="480" ></a>
 
 
 One thing I have noticed is that the MPPT charger is quite noisy... it hurts RX consistency when charging. Something I will have to look at in the future. Maybe more filtering caps on the MPPT output?
 
 Also, Meshtastic does not support battery voltage below 2.5v, so if the capacitor voltage drops below that, it assumes the node is USB powered... Not a big deal since it rarely drops that low, but still a little annoying.
 
-![testing3](pics/testing3.png)
+<a href="url"><img src="https://github.com/hawkeyes0v0/SupercapacitorSolarNode/blob/main/pics/testing3.png" align="center" width="480" ></a>
