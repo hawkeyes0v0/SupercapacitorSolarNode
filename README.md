@@ -50,9 +50,15 @@ The board I used is a Heltec T114 (no display version) with the stock GPS module
 [Heltec T114 (no display) + GPS](https://vi.aliexpress.com/item/1005007916299029.html)
 
 
-Other miscellaneous parts:
+The solar Panel and CN3791 MPPT charger provide enough power to charge even on cloudy days. Very rarely, on extremely cloudy/dark days it won't be enough, but the supercaps have about 2 days worth of reserve power to keep it going.
+The solar panel is a 10W Renogy I got from Amazon. The MPPT charger is the 12v version with a 2A max output.
+
+[10W Renogy Solar Panel](https://www.amazon.ca/dp/B084MGS7KC)
 
 [12v MPPT to 4.2v lithium charger](https://vi.aliexpress.com/item/1005001572351643.html)
+
+
+Other miscellaneous parts:
 
 [BME280](https://vi.aliexpress.com/item/1005007348035264.html)
 
@@ -73,6 +79,10 @@ The capacitors used are 2x 2.5V @ 2300F supercapacitors. They have been arranged
 
 Link to datasheet: https://www.chemi-con.co.jp/e/catalog/pdf/dl-e/dl-sepa-e/dl-dle-e-170401.pdf
 
+One thing to note, the balance boards in this node have never actually been triggered after months of testing. So you could get away with not adding them as long as you only charge to ~4.2V with a supercap rating of 2x 2.5v => 5v or more. 
+Supercaps 'leak' current faster and faster, the closer you get to full charge. So they essentially balance themselves if you charge them slowly.
+As an example, these supercaps have a max rating of 2.5v. When I charge them to 2.5v, they quickly drop to about 2v on their own with no load over a few hours.
+
 The equations I used to calculate the capacitance and subsequently the available watt hours:
 
 (C1*C2) / (C1+C2) = Ctotal
@@ -91,3 +101,29 @@ Watt hours / output voltage of DCDC converter = available Ah
 
 At 3.3V output, 800mAh can be expected while ignoring self discharge and boost-buck converter inefficiencies.
 
+
+## 3D Printed Parts
+
+The STL files are included below, but you may have to modify them to support your own components or enclosure.
+
+[bottom 5V1150F Solar Node](https://www.tinkercad.com/things/4mrYyDIKIQc-bottom-5v1150f-solar-node)
+
+[top 5V1150F Solar Node](https://www.tinkercad.com/things/6spdvdrJQ3b-top-5v1150f-solar-node)
+
+[flat Core 5V1150F Solar Node](https://www.tinkercad.com/things/jdPOMBwyFCB-flat-core-5v1150f-solar-node)
+
+
+## Tests and Results
+
+After a few months of testing, the node has only run out of power twice during extremely dark and stormy weeks. Full charge is acheived in under an hour of full sun. 
+
+MPPT charger can be seen converting the much higher voltage down to the supercap voltage and increasing the current significantly.
+
+![testing1](pics/testing1.png)
+
+![testing2](pics/testing2.png)
+
+
+One thing I have noticed is that the MPPT charger is quite noisy... it hurts RX consistency when charging. Something I will have to look at in the future. Maybe more filtering caps on the MPPT output?
+
+![testing3](pics/testing3.png)
