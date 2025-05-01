@@ -4,6 +4,7 @@ Here is a quick write-up on my attempt at a solar powered supercapacitor node. C
 
 ![Tree mounted node](pics/treemount.jpg)
 
+
 ## Quick Specs
 
 - 5V 1150F (2x 2.5V 2300F) = ~700mAh @ 3.3v boost
@@ -27,21 +28,40 @@ Here is a quick write-up on my attempt at a solar powered supercapacitor node. C
 ## Hardware
 
 Any supercapacitors will work as long as the rated voltage totals over 4.2v. Preferably 5v or higher since the closer you charge a supercapacitor to it's rated voltage, the faster it will self-discharge (meaning it wastes power for no reason).
+
 [2.5V 2300F supercapacitors](https://vi.aliexpress.com/item/1005008157585442.html)
 
 ![Supercaps](pics/Supercaps.jpg)
 
 Supercapacitor balancing boards are required since charging and discharging frequently can cause one of the 2 to become higher voltage than the other and potentially exceed the max voltage rating... Meaning it will release the magic smoke.
 I used these ones that balance for 2.5v. They require full assembly on a hotplate.
+
 [Balance boards DIY kit](https://vi.aliexpress.com/item/1005007409357117.html)
 
-I am using this custom cutoff and delayed resume board to manage the system when voltage drops too low to be of use. It also supplies the 3.3v output to the MCU.
+I am using this custom cutoff and delayed resume board to manage the system when voltage drops too low to be of use. It also supplies the 3.3v output to the MCU. The cutoff is set to 1.0v and resume at 2.5v. The boost converter keeps the voltage at 3.3v when the supercaps drop below 3.3v.
+
 [ATTiny85-Power-Controller](https://github.com/hawkeyes0v0/ATTiny85-Power-Controller)
 
+The board I used is a Heltec T114 (no display version) with the stock GPS module. This is not as efficient as using a RAK, but I wanted to use GPS for mesh time. T114 stock GPS is extremely power efficient if only polled a few times a day max.
 
-[DigiSpark ATTiny85](https://vi.aliexpress.com/item/2040316211.html)
+[Heltec T114 (no display) + GPS](https://vi.aliexpress.com/item/1005007916299029.html)
 
-![DigiSpark](PCB/Digispark.PNG)
+Other miscellaneous parts:
+
+[12v MPPT to 4.2v lithium charger](https://vi.aliexpress.com/item/1005001572351643.html)
+
+[BME280](https://vi.aliexpress.com/item/1005007348035264.html)
+
+[INA3221](https://vi.aliexpress.com/item/1005006160604929.html)
+
+[45cm Gizont antenna](https://vi.aliexpress.com/item/1005006428104797.html)
+
+[210x160x100mm waterproof enclosure](https://vi.aliexpress.com/item/1005005859929902.html)
+
+[OUTER sealed N to ipex](https://vi.aliexpress.com/item/1005002684928124.html)
+
+[45cm Gizont antenna](https://vi.aliexpress.com/item/1005006428104797.html)
+
 
 ## Supercapacitor Info
 
