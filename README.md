@@ -2,7 +2,7 @@
 
 Here is a quick write-up on my attempt at a solar powered supercapacitor node. Currently one lives in a tree above my house and the other at ground level that I use for testing purposes (firmware, rewiring, etc).
 
-![Tree mounted node](pics/treemount.jpg)
+<a href="url"><img src="https://github.com/hawkeyes0v0/SupercapacitorSolarNode/blob/main/pics/treemount.jpg" align="center" width="480" ></a>
 
 
 ## Quick Specs
@@ -22,6 +22,7 @@ Here is a quick write-up on my attempt at a solar powered supercapacitor node. C
 - 7dbi antenna
 
 <a href="url"><img src="https://github.com/hawkeyes0v0/SupercapacitorSolarNode/blob/main/pics/assembled.jpg" align="center" width="480" ></a>
+
 <a href="url"><img src="https://github.com/hawkeyes0v0/SupercapacitorSolarNode/blob/main/pics/exploded1.jpg" align="center" width="480" ></a>
 
 
