@@ -108,6 +108,7 @@ After a few months of testing, the node has only run out of power twice during e
 MPPT charger can be seen converting the much higher voltage down to the supercap voltage and increasing the current significantly.
 
 <a href="url"><img src="https://github.com/hawkeyes0v0/SupercapacitorSolarNode/blob/main/pics/testing1.png" align="center" width="480" ></a>
+
 <a href="url"><img src="https://github.com/hawkeyes0v0/SupercapacitorSolarNode/blob/main/pics/testing2.png" align="center" width="480" ></a>
 
 
