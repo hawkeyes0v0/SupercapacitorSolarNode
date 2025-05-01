@@ -1,7 +1,26 @@
 # SupercapacitorSolarNode
-5V 1150F (2x 2.5V 2300F) = ~700mAh @ 3.3v boost
+
+Here is a quick write-up on my attempt at a solar powered supercapacitor node. Currently one lives in a tree above my house and the other at ground level that I use for testing purposes (firmware, rewiring, etc).
 
 ![Tree mounted node](pics/treemount.jpg)
+
+## Quick Specs
+5V 1150F (2x 2.5V 2300F) = ~700mAh @ 3.3v boost
+
+- 5V 1150F (2x 2.5V 2300F) = ~700mAh @ 3.3v boost
+
+- Heltec T114
+
+- Gps, bme280, ina3221
+
+- Attiny85 cutoff at 1v and resume at 2.5v
+
+- 12v MPPT (CN3791)
+
+- 10w renogy
+
+- 7dbi antenna
+
 ![Assembled](pics/assembled.jpg)
 ![Exploded](pics/exploded1.jpg)
 
@@ -49,6 +68,3 @@ Watt hours / output voltage of DCDC converter = available Ah
 
 At 3.3V output, 800mAh can be expected while ignoring self discharge and boost-buck converter inefficiencies.
 
-## Function
-
-The Supercapacitors are 
