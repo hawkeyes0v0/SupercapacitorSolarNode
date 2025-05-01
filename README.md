@@ -30,7 +30,7 @@ Here is a quick write-up on my attempt at a solar powered supercapacitor node. C
 Any supercapacitors will work as long as the rated voltage totals over 4.2v. Preferably 5v or higher since the closer you charge a supercapacitor to it's rated voltage, the faster it will self-discharge (meaning it wastes power for no reason).
 - [2.5V 2300F supercapacitors](https://vi.aliexpress.com/item/1005008157585442.html)
 
-![Supercaps](pics/Supercaps.jpg)
+<a href="url"><img src="https://github.com/hawkeyes0v0/SupercapacitorSolarNode/blob/main/pics/Supercaps.jpg" align="center" width="480" ></a>
 
 
 Supercapacitor balancing boards are required since charging and discharging frequently can cause one of the 2 to become higher voltage than the other and potentially exceed the max voltage rating... Meaning it will release the magic smoke.
