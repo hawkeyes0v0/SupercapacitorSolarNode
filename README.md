@@ -116,4 +116,6 @@ MPPT charger can be seen converting the much higher voltage down to the supercap
 
 One thing I have noticed is that the MPPT charger is quite noisy... it hurts RX consistency when charging. Something I will have to look at in the future. Maybe more filtering caps on the MPPT output?
 
+Also, Meshtastic does not support battery voltage below 2.5v, so if the capacitor voltage drops below that, it assumes the node is USB powered... Not a big deal since it rarely drops that low, but still a little annoying.
+
 ![testing3](pics/testing3.png)
