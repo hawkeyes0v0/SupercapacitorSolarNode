@@ -1,8 +1,9 @@
 # SupercapacitorSolarNode
 5V 1150F (2x 2.5V 2300F) = ~700mAh @ 3.3v boost
-# ATTiny85-Power-Controller
 
-![Power Controller](PCB/3D.PNG)
+![Tree mounted node](pics/treemount.jpg)
+![Tree mounted node](pics/assembled.jpg)
+![Tree mounted node](pics/exploded1.jpg)
 
 ## Hardware
 
