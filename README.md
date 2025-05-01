@@ -56,16 +56,12 @@ The solar panel is a 10W Renogy I got from Amazon. The MPPT charger is the 12v v
 Other miscellaneous parts:
 
 - [BME280](https://vi.aliexpress.com/item/1005007348035264.html)
-
 - [INA3221](https://vi.aliexpress.com/item/1005006160604929.html)
-
 - [45cm Gizont antenna](https://vi.aliexpress.com/item/1005006428104797.html)
-
 - [210x160x100mm waterproof enclosure](https://vi.aliexpress.com/item/1005005859929902.html)
-
 - [OUTER sealed N to ipex](https://vi.aliexpress.com/item/1005002684928124.html)
-
 - [45cm Gizont antenna](https://vi.aliexpress.com/item/1005006428104797.html)
+- [M16x1.5 Stainless Steel Gland](https://vi.aliexpress.com/item/1005005076468790.html)
 
 
 ## Supercapacitor Info
