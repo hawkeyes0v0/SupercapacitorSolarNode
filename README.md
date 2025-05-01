@@ -5,7 +5,6 @@ Here is a quick write-up on my attempt at a solar powered supercapacitor node. C
 ![Tree mounted node](pics/treemount.jpg)
 
 ## Quick Specs
-5V 1150F (2x 2.5V 2300F) = ~700mAh @ 3.3v boost
 
 - 5V 1150F (2x 2.5V 2300F) = ~700mAh @ 3.3v boost
 
