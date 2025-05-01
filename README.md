@@ -28,49 +28,44 @@ Here is a quick write-up on my attempt at a solar powered supercapacitor node. C
 ## Hardware
 
 Any supercapacitors will work as long as the rated voltage totals over 4.2v. Preferably 5v or higher since the closer you charge a supercapacitor to it's rated voltage, the faster it will self-discharge (meaning it wastes power for no reason).
-
-[2.5V 2300F supercapacitors](https://vi.aliexpress.com/item/1005008157585442.html)
+- [2.5V 2300F supercapacitors](https://vi.aliexpress.com/item/1005008157585442.html)
 
 ![Supercaps](pics/Supercaps.jpg)
 
 
 Supercapacitor balancing boards are required since charging and discharging frequently can cause one of the 2 to become higher voltage than the other and potentially exceed the max voltage rating... Meaning it will release the magic smoke.
 I used these ones that balance for 2.5v. They require full assembly on a hotplate.
-
-[Balance boards DIY kit](https://vi.aliexpress.com/item/1005007409357117.html)
+- [Balance boards DIY kit](https://vi.aliexpress.com/item/1005007409357117.html)
 
 
 I am using this custom cutoff and delayed resume board to manage the system when voltage drops too low to be of use. It also supplies the 3.3v output to the MCU. The cutoff is set to 1.0v and resume at 2.5v. The boost converter keeps the voltage at 3.3v when the supercaps drop below 3.3v.
-
-[ATTiny85-Power-Controller](https://github.com/hawkeyes0v0/ATTiny85-Power-Controller)
+- [ATTiny85-Power-Controller](https://github.com/hawkeyes0v0/ATTiny85-Power-Controller)
 
 
 The board I used is a Heltec T114 (no display version) with the stock GPS module. This is not as efficient as using a RAK, but I wanted to use GPS for mesh time. T114 stock GPS is extremely power efficient if only polled a few times a day max.
-
-[Heltec T114 (no display) + GPS](https://vi.aliexpress.com/item/1005007916299029.html)
+- [Heltec T114 (no display) + GPS](https://vi.aliexpress.com/item/1005007916299029.html)
 
 
 The solar Panel and CN3791 MPPT charger provide enough power to charge even on cloudy days. Very rarely, on extremely cloudy/dark days it won't be enough, but the supercaps have about 2 days worth of reserve power to keep it going.
 The solar panel is a 10W Renogy I got from Amazon. The MPPT charger is the 12v version with a 2A max output.
+- [10W Renogy Solar Panel](https://www.amazon.ca/dp/B084MGS7KC)
 
-[10W Renogy Solar Panel](https://www.amazon.ca/dp/B084MGS7KC)
-
-[12v MPPT to 4.2v lithium charger](https://vi.aliexpress.com/item/1005001572351643.html)
+- [12v MPPT to 4.2v lithium charger](https://vi.aliexpress.com/item/1005001572351643.html)
 
 
 Other miscellaneous parts:
 
-[BME280](https://vi.aliexpress.com/item/1005007348035264.html)
+- [BME280](https://vi.aliexpress.com/item/1005007348035264.html)
 
-[INA3221](https://vi.aliexpress.com/item/1005006160604929.html)
+- [INA3221](https://vi.aliexpress.com/item/1005006160604929.html)
 
-[45cm Gizont antenna](https://vi.aliexpress.com/item/1005006428104797.html)
+- [45cm Gizont antenna](https://vi.aliexpress.com/item/1005006428104797.html)
 
-[210x160x100mm waterproof enclosure](https://vi.aliexpress.com/item/1005005859929902.html)
+- [210x160x100mm waterproof enclosure](https://vi.aliexpress.com/item/1005005859929902.html)
 
-[OUTER sealed N to ipex](https://vi.aliexpress.com/item/1005002684928124.html)
+- [OUTER sealed N to ipex](https://vi.aliexpress.com/item/1005002684928124.html)
 
-[45cm Gizont antenna](https://vi.aliexpress.com/item/1005006428104797.html)
+- [45cm Gizont antenna](https://vi.aliexpress.com/item/1005006428104797.html)
 
 
 ## Supercapacitor Info
@@ -105,12 +100,11 @@ At 3.3V output, 800mAh can be expected while ignoring self discharge and boost-b
 ## 3D Printed Parts
 
 The STL files are included below, but you may have to modify them to support your own components or enclosure.
+- [bottom 5V1150F Solar Node](https://www.tinkercad.com/things/4mrYyDIKIQc-bottom-5v1150f-solar-node)
 
-[bottom 5V1150F Solar Node](https://www.tinkercad.com/things/4mrYyDIKIQc-bottom-5v1150f-solar-node)
+- [top 5V1150F Solar Node](https://www.tinkercad.com/things/6spdvdrJQ3b-top-5v1150f-solar-node)
 
-[top 5V1150F Solar Node](https://www.tinkercad.com/things/6spdvdrJQ3b-top-5v1150f-solar-node)
-
-[flat Core 5V1150F Solar Node](https://www.tinkercad.com/things/jdPOMBwyFCB-flat-core-5v1150f-solar-node)
+- [flat Core 5V1150F Solar Node](https://www.tinkercad.com/things/jdPOMBwyFCB-flat-core-5v1150f-solar-node)
 
 
 ## Tests and Results
