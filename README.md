@@ -33,18 +33,22 @@ Any supercapacitors will work as long as the rated voltage totals over 4.2v. Pre
 
 ![Supercaps](pics/Supercaps.jpg)
 
+
 Supercapacitor balancing boards are required since charging and discharging frequently can cause one of the 2 to become higher voltage than the other and potentially exceed the max voltage rating... Meaning it will release the magic smoke.
 I used these ones that balance for 2.5v. They require full assembly on a hotplate.
 
 [Balance boards DIY kit](https://vi.aliexpress.com/item/1005007409357117.html)
 
+
 I am using this custom cutoff and delayed resume board to manage the system when voltage drops too low to be of use. It also supplies the 3.3v output to the MCU. The cutoff is set to 1.0v and resume at 2.5v. The boost converter keeps the voltage at 3.3v when the supercaps drop below 3.3v.
 
 [ATTiny85-Power-Controller](https://github.com/hawkeyes0v0/ATTiny85-Power-Controller)
 
+
 The board I used is a Heltec T114 (no display version) with the stock GPS module. This is not as efficient as using a RAK, but I wanted to use GPS for mesh time. T114 stock GPS is extremely power efficient if only polled a few times a day max.
 
 [Heltec T114 (no display) + GPS](https://vi.aliexpress.com/item/1005007916299029.html)
+
 
 Other miscellaneous parts:
 
